@@ -8,8 +8,6 @@ const DB = process.env.DATABASE_SERVER;
 mongoose
   .connect(DB, {
     useNewUrlParser: true,
-    // useCreateIndex: true,
-    // useFindAndModify: false,
     useUnifiedTopology: true,
   })
   .then((con) => {
