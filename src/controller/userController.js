@@ -37,9 +37,9 @@ const createUser = async (req, res) => {
 // const getUser = async (req, res) => {
 //   try {
 //     const user = await User.findById(req.body.id).select("-password");
-//     res.json(user);
+//     res.status(200).json({status: "Success",data:user});
 //   } catch (err) {
-//     res.status(400).send(err.message);
+//     res.status(400).json({status: "Error",message: err.message,});
 //   }
 // };
 
